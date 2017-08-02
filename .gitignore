@@ -40,3 +40,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Auth0 secret
+src/app/auth/auth0-variables.ts

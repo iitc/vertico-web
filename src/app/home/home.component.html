@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h1>Vertico Cloud</h1>
+  <p>todo </p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  <h4 *ngIf="auth.isAuthenticated()">
+    You are logged in! You can now view your <a routerLink="/profile">profile area</a>.
+  </h4>
+  <h4 *ngIf="!auth.isAuthenticated()">
+    You are not logged in! Please <a (click)="auth.login()">Log In</a> to continue.
+  </h4>
+</div>

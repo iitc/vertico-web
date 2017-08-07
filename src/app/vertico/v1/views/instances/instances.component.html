@@ -5,17 +5,17 @@
 </div>
  <h4 *ngIf="auth.isAuthenticated()">
     <div *ngFor="let instance of userInstances">
-      <h1> {{instance.name}}</h1>
+      <h1><span class="glyphicon glyphicon-tags glyphicon" aria-hidden="true"></span> {{instance.nickname}}</h1>
       <span class="badge">{{instance.id | uppercase}}</span>
       <h5> Operating System : {{instance.os}}</h5>
       <h5> Private IP : {{instance.privateIP}}</h5>
       <h5> Public IP : {{instance.publicIP}}</h5>
-      <h5> Credits : {{instance.credits | currency}}</h5>
+      <!-- <h5> Credits : {{instance.credits | currency}}</h5> -->
       <h5> RAM : {{instance.ram}}</h5>
       <h5> DiskSpace : {{instance.diskSpace}}</h5>
       <h5> Current Status: {{instance.status}}</h5>
-      <pre class="full-profile"> Other info: {{instance.info | json}}</pre>
-       
+      <!-- <pre class="full-profile"> Other info: {{instance.info | json}}</pre> -->
+      
     </div>
   </h4>
 <!-- 

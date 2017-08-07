@@ -1,10 +1,12 @@
 <div class="panel panel-default profile-area">
   <div class="panel-body">
+
     <img src="{{profile?.picture}}" class="avatar" alt="avatar" />
-    <h4>Credits = {{verticoUser.credits | currency }}</h4>
-    <h4>SecretKey = {{verticoUser.secretKey }}</h4>
-    <h4>Unique-ID = {{verticoUser.id }}</h4>
-    <h4>Active ? = {{verticoUser.active }}</h4>
+    <h5> <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> Credits = {{verticoUser.credits | currency }}</h5>
+    <h5><span class="glyphicon glyphicon-console" aria-hidden="true"></span> SecretKey = {{verticoUser.secretKey }}</h5>
+    <h5> <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Unique-ID = {{verticoUser.id }}</h5>
+    <h5><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Active ? = {{verticoUser.active }}</h5>
+    
     <h6> Other info(debug) </h6>
     <pre class="full-profile">{{ profile | json }}</pre>
   </div>

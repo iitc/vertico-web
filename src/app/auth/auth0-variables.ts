@@ -5,7 +5,7 @@ interface AuthConfig {
 }
 
 export const AUTH_CONFIG: AuthConfig = {
-  clientID: 'kcjzc6qF2wzwAAo5J30P3tONHV8jJ8qN',
+  clientID: 'yourid',
   domain: 'vertico-cloud.auth0.com',
-  callbackURL: 'http://129.114.108.1/callback'
+  callbackURL: 'http://localhost/callback'
 };

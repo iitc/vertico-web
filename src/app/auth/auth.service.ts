@@ -7,6 +7,7 @@ import 'rxjs/add/operator/filter';
 import * as auth0 from 'auth0-js';
 import * as cj from 'crypto-js';
 import * as  SHA256 from'crypto-js/sha256';
+import * as uuidv1 from'uuid/v1';
 
 @Injectable()
 export class AuthService {
@@ -45,7 +46,7 @@ export class AuthService {
             credits:1000,
             email: profile.email,
             username: profile.name,
-            secretKey: SHA256(new Date().toISOString).toString()
+            secretKey: uuidv1()
           }
           
           localStorage.setItem('email', profile.email);

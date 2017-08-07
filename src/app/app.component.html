@@ -7,9 +7,9 @@
         <li><a *ngIf="auth.isAuthenticated()" routerLink="/profile">Profile </a></li>
         <li><a *ngIf="auth.isAuthenticated()" routerLink="/instances">instances</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a *ngIf="!auth.isAuthenticated()" (click)="auth.login()">Sign in or Sign up</a></li>
-        <li  *ngIf="auth.isAuthenticated()" (click)="auth.logout()"><a> <span class="glyphicon glyphicon-off" aria-hidden="true"></span></a></li>
+      <ul id="login" class="nav navbar-nav navbar-right">
+        <li><a *ngIf="!auth.isAuthenticated()" (click)="auth.login()" id="login">Sign in or Sign up</a></li>
+        <li  *ngIf="auth.isAuthenticated()" (click)="auth.logout()" id="login"><a> <span class="glyphicon glyphicon-off" aria-hidden="true"></span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
